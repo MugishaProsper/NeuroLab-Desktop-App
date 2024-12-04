@@ -3,7 +3,7 @@ import { configDotenv } from 'dotenv';
 
 configDotenv();
 
-export const generateTokenAndSetCookie = async (user, res) => {
+export const generateTokenAndSetCookie = (user, res) => {
   const payload = { id: user._id, username: user.username };
   
   try {

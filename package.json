@@ -4,9 +4,10 @@
   "main": "main.js",
   "scripts": {
     "start": "concurrently \"npm run backend\" \"npm run frontend\"",
-    "backend": "node ./backend/server.js",
+    "backend": "nodemon ./backend/server.js",
     "frontend": "cd frontend && npm run dev",
-    "electron": "electron ."
+    "electron": "electron .",
+    "python" : "python ./backend/analysis/app.py"
   },
   "keywords": [],
   "author": "",
